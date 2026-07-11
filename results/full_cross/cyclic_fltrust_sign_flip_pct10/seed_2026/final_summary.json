@@ -1,0 +1,17 @@
+{
+  "experiment": "seed_2026",
+  "seed": 2026,
+  "selection_strategy": "cyclic",
+  "aggregation_method": "fltrust",
+  "attack_type": "sign_flip",
+  "byzantine_pct": 0.1,
+  "n_byzantine_total": 5,
+  "distribution": "dirichlet",
+  "alpha": 0.5,
+  "model": "simple_cnn",
+  "final_accuracy": 0.6001,
+  "total_rounds": 60,
+  "rounds_completed": 60,
+  "simulation_completed": true,
+  "total_selection_time_ms": 3.3585419997166355
+}

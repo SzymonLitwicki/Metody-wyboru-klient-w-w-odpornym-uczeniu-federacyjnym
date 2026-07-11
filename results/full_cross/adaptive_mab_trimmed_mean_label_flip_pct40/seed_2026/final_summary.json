@@ -1,0 +1,17 @@
+{
+  "experiment": "seed_2026",
+  "seed": 2026,
+  "selection_strategy": "adaptive_mab",
+  "aggregation_method": "trimmed_mean",
+  "attack_type": "label_flip",
+  "byzantine_pct": 0.4,
+  "n_byzantine_total": 20,
+  "distribution": "dirichlet",
+  "alpha": 0.5,
+  "model": "simple_cnn",
+  "final_accuracy": 0.4541,
+  "total_rounds": 60,
+  "rounds_completed": 60,
+  "simulation_completed": true,
+  "total_selection_time_ms": 89.31271400979313
+}

@@ -1,0 +1,1443 @@
+base: configs/default.yaml
+output_dir: results/full_cross
+runs:
+- name: random_fedavg_gaussian_noise_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: random_fedavg_gaussian_noise_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: random_fedavg_gaussian_noise_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: random_fedavg_label_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: random_fedavg_label_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: random_fedavg_label_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: random_fedavg_sign_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: random_fedavg_sign_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: random_fedavg_sign_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: random_trimmed_mean_gaussian_noise_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: random_trimmed_mean_gaussian_noise_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: random_trimmed_mean_gaussian_noise_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: random_trimmed_mean_label_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: random_trimmed_mean_label_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: random_trimmed_mean_label_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: random_trimmed_mean_sign_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: random_trimmed_mean_sign_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: random_trimmed_mean_sign_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: random_krum_gaussian_noise_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: random_krum_gaussian_noise_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: random_krum_gaussian_noise_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: random_krum_label_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: random_krum_label_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: random_krum_label_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: random_krum_sign_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: random_krum_sign_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: random_krum_sign_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: random_bulyan_gaussian_noise_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: random_bulyan_gaussian_noise_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: random_bulyan_gaussian_noise_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: random_bulyan_label_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: random_bulyan_label_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: random_bulyan_label_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: random_bulyan_sign_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: random_bulyan_sign_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: random_bulyan_sign_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: random_fltrust_gaussian_noise_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: random_fltrust_gaussian_noise_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: random_fltrust_gaussian_noise_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: random_fltrust_label_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: random_fltrust_label_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: random_fltrust_label_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: random_fltrust_sign_flip_pct10
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: random_fltrust_sign_flip_pct20
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: random_fltrust_sign_flip_pct40
+  selection:
+    strategy: random
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: cyclic_fedavg_gaussian_noise_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: cyclic_fedavg_gaussian_noise_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: cyclic_fedavg_gaussian_noise_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: cyclic_fedavg_label_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: cyclic_fedavg_label_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: cyclic_fedavg_label_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: cyclic_fedavg_sign_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: cyclic_fedavg_sign_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: cyclic_fedavg_sign_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: cyclic_trimmed_mean_gaussian_noise_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: cyclic_trimmed_mean_gaussian_noise_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: cyclic_trimmed_mean_gaussian_noise_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: cyclic_trimmed_mean_label_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: cyclic_trimmed_mean_label_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: cyclic_trimmed_mean_label_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: cyclic_trimmed_mean_sign_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: cyclic_trimmed_mean_sign_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: cyclic_trimmed_mean_sign_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: cyclic_krum_gaussian_noise_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: cyclic_krum_gaussian_noise_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: cyclic_krum_gaussian_noise_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: cyclic_krum_label_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: cyclic_krum_label_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: cyclic_krum_label_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: cyclic_krum_sign_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: cyclic_krum_sign_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: cyclic_krum_sign_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: cyclic_bulyan_gaussian_noise_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: cyclic_bulyan_gaussian_noise_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: cyclic_bulyan_gaussian_noise_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: cyclic_bulyan_label_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: cyclic_bulyan_label_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: cyclic_bulyan_label_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: cyclic_bulyan_sign_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: cyclic_bulyan_sign_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: cyclic_bulyan_sign_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: cyclic_fltrust_gaussian_noise_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: cyclic_fltrust_gaussian_noise_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: cyclic_fltrust_gaussian_noise_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: cyclic_fltrust_label_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: cyclic_fltrust_label_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: cyclic_fltrust_label_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: cyclic_fltrust_sign_flip_pct10
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: cyclic_fltrust_sign_flip_pct20
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: cyclic_fltrust_sign_flip_pct40
+  selection:
+    strategy: cyclic
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: reputation_fedavg_gaussian_noise_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: reputation_fedavg_gaussian_noise_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: reputation_fedavg_gaussian_noise_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: reputation_fedavg_label_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: reputation_fedavg_label_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: reputation_fedavg_label_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: reputation_fedavg_sign_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: reputation_fedavg_sign_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: reputation_fedavg_sign_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: reputation_trimmed_mean_gaussian_noise_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: reputation_trimmed_mean_gaussian_noise_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: reputation_trimmed_mean_gaussian_noise_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: reputation_trimmed_mean_label_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: reputation_trimmed_mean_label_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: reputation_trimmed_mean_label_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: reputation_trimmed_mean_sign_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: reputation_trimmed_mean_sign_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: reputation_trimmed_mean_sign_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: reputation_krum_gaussian_noise_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: reputation_krum_gaussian_noise_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: reputation_krum_gaussian_noise_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: reputation_krum_label_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: reputation_krum_label_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: reputation_krum_label_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: reputation_krum_sign_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: reputation_krum_sign_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: reputation_krum_sign_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: reputation_bulyan_gaussian_noise_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: reputation_bulyan_gaussian_noise_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: reputation_bulyan_gaussian_noise_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: reputation_bulyan_label_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: reputation_bulyan_label_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: reputation_bulyan_label_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: reputation_bulyan_sign_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: reputation_bulyan_sign_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: reputation_bulyan_sign_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: reputation_fltrust_gaussian_noise_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: reputation_fltrust_gaussian_noise_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: reputation_fltrust_gaussian_noise_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: reputation_fltrust_label_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: reputation_fltrust_label_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: reputation_fltrust_label_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: reputation_fltrust_sign_flip_pct10
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: reputation_fltrust_sign_flip_pct20
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: reputation_fltrust_sign_flip_pct40
+  selection:
+    strategy: reputation
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_fedavg_gaussian_noise_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: adaptive_mab_fedavg_gaussian_noise_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: adaptive_mab_fedavg_gaussian_noise_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: adaptive_mab_fedavg_label_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_fedavg_label_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_fedavg_label_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_fedavg_sign_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_fedavg_sign_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_fedavg_sign_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fedavg
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_trimmed_mean_gaussian_noise_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: adaptive_mab_trimmed_mean_gaussian_noise_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: adaptive_mab_trimmed_mean_gaussian_noise_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: adaptive_mab_trimmed_mean_label_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_trimmed_mean_label_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_trimmed_mean_label_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_trimmed_mean_sign_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_trimmed_mean_sign_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_trimmed_mean_sign_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: trimmed_mean
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_krum_gaussian_noise_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: adaptive_mab_krum_gaussian_noise_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: adaptive_mab_krum_gaussian_noise_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: adaptive_mab_krum_label_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_krum_label_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_krum_label_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_krum_sign_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_krum_sign_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_krum_sign_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: krum
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_bulyan_gaussian_noise_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: adaptive_mab_bulyan_gaussian_noise_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: adaptive_mab_bulyan_gaussian_noise_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: adaptive_mab_bulyan_label_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_bulyan_label_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_bulyan_label_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_bulyan_sign_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_bulyan_sign_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_bulyan_sign_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: bulyan
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_fltrust_gaussian_noise_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.1
+- name: adaptive_mab_fltrust_gaussian_noise_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.2
+- name: adaptive_mab_fltrust_gaussian_noise_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: gaussian_noise
+    byzantine_pct: 0.4
+- name: adaptive_mab_fltrust_label_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_fltrust_label_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_fltrust_label_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: label_flip
+    byzantine_pct: 0.4
+- name: adaptive_mab_fltrust_sign_flip_pct10
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.1
+- name: adaptive_mab_fltrust_sign_flip_pct20
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.2
+- name: adaptive_mab_fltrust_sign_flip_pct40
+  selection:
+    strategy: adaptive_mab
+  aggregation:
+    method: fltrust
+  attack:
+    type: sign_flip
+    byzantine_pct: 0.4

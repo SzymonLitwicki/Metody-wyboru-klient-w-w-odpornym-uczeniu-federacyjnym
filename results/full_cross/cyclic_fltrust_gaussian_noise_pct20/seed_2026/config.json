@@ -1,0 +1,56 @@
+{
+  "name": "seed_2026",
+  "seed": 2026,
+  "data": {
+    "dataset": "cifar10",
+    "distribution": "dirichlet",
+    "alpha": 0.5,
+    "num_classes_per_client": 2
+  },
+  "model": {
+    "name": "simple_cnn"
+  },
+  "fl": {
+    "num_clients": 50,
+    "clients_per_round": 10,
+    "rounds": 60,
+    "local_epochs": 5,
+    "learning_rate": 0.01,
+    "batch_size": 32
+  },
+  "attack": {
+    "type": "gaussian_noise",
+    "byzantine_pct": 0.2,
+    "scale": 1.0
+  },
+  "selection": {
+    "strategy": "cyclic"
+  },
+  "aggregation": {
+    "method": "fltrust",
+    "krum_m": 1,
+    "trim_ratio": 0.1
+  },
+  "logging": {
+    "output_dir": "results/full_cross/cyclic_fltrust_gaussian_noise_pct20",
+    "log_every": 1
+  },
+  "_lib_versions": {
+    "torch": "2.12.1",
+    "flwr": "1.29.0",
+    "numpy": "2.4.4",
+    "pydantic": "2.13.2"
+  },
+  "_malicious_ids": [
+    4,
+    8,
+    21,
+    22,
+    26,
+    31,
+    32,
+    35,
+    38,
+    46
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "experiment": "seed_2026",
+  "seed": 2026,
+  "selection_strategy": "random",
+  "aggregation_method": "fedavg",
+  "attack_type": "gaussian_noise",
+  "byzantine_pct": 0.2,
+  "n_byzantine_total": 10,
+  "distribution": "dirichlet",
+  "alpha": 0.5,
+  "model": "simple_cnn",
+  "final_accuracy": 0.1,
+  "total_rounds": 60,
+  "rounds_completed": 60,
+  "simulation_completed": true,
+  "total_selection_time_ms": 9.48783299918432
+}
